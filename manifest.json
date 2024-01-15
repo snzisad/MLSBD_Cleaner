@@ -1,0 +1,19 @@
+{
+
+    "description": "Hide adult content from MLSBD",
+    "manifest_version": 2,
+    "name": "MLSBD Cleaner",
+    "version": "1.0",
+    "homepage_url": "https://github.com/snzisad/MLSBD_Cleaner",
+    "icons": {
+      "48": "icons/icon.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.mlsbd.shop/*"],
+        "js": ["script.js"]
+      }
+    ]
+  
+  }
